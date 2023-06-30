@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 29 09:27:44 2023
+# Process ID: 3244
+# Current directory: D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11112 D:\AJC projets\VGA phase2\Image_Conv_VHDL_280623v5_filtrage unite\project_1\project_1.xpr
+# Log file: D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/vivado.log
+# Journal file: D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/tb_behav.wcfg}
+source tb.tcl
+run 1 ms
+save_wave_config {D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/tb_behav.wcfg}
+source tb.tcl
+run 1 ms
+save_wave_config {D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/tb_behav.wcfg}
+close_sim
