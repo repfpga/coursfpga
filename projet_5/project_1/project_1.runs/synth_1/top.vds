@@ -1,0 +1,336 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 29 16:49:05 2023
+# Process ID: 1908
+# Current directory: C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/project_1.runs/synth_1/top.vds
+# Journal file: C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15000
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1032.301 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/top.vhd:16]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/project_1.runs/synth_1/.Xil/Vivado-1908-DESKTOP-C4LOLEP/realtime/clk_wiz_0_stub.v:5' bound to instance 'clk_div_inst' of component 'clk_wiz_0' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/top.vhd:91]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/project_1.runs/synth_1/.Xil/Vivado-1908-DESKTOP-C4LOLEP/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/project_1.runs/synth_1/.Xil/Vivado-1908-DESKTOP-C4LOLEP/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-5640] Port 'h_cntr_reg_o' is missing in component declaration [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/top.vhd:29]
+WARNING: [Synth 8-5640] Port 'v_cntr_reg_o' is missing in component declaration [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/top.vhd:29]
+INFO: [Synth 8-3491] module 'generateur_pattern' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/generateur_pattern.vhd:5' bound to instance 'generateur_pattern_inst' of component 'generateur_pattern' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/top.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'generateur_pattern' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/generateur_pattern.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'generateur_pattern' (2#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/generateur_pattern.vhd:15]
+INFO: [Synth 8-3491] module 'system_conv' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/system_conv.vhd:13' bound to instance 'system_conv_inst' of component 'system_conv' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/top.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'system_conv' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/system_conv.vhd:31]
+INFO: [Synth 8-3491] module 'buffer_module' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/buffer_module.vhd:13' bound to instance 'unit_2' of component 'buffer_module' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/system_conv.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'buffer_module' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/buffer_module.vhd:23]
+INFO: [Synth 8-3491] module 'shift_register' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/shift_register.vhd:12' bound to instance 'bottom_shift' of component 'shift_register' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/buffer_module.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'shift_register' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/shift_register.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'shift_register' (3#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/shift_register.vhd:20]
+INFO: [Synth 8-3491] module 'pixel_buffer' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/pixel_buffer.vhd:13' bound to instance 'first_buffer' of component 'pixel_buffer' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/buffer_module.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'pixel_buffer' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/pixel_buffer.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'pixel_buffer' (4#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/pixel_buffer.vhd:21]
+INFO: [Synth 8-3491] module 'shift_register' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/shift_register.vhd:12' bound to instance 'middle_shift' of component 'shift_register' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/buffer_module.vhd:54]
+INFO: [Synth 8-3491] module 'pixel_buffer' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/pixel_buffer.vhd:13' bound to instance 'second_buffer' of component 'pixel_buffer' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/buffer_module.vhd:57]
+INFO: [Synth 8-3491] module 'shift_register' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/shift_register.vhd:12' bound to instance 'top_shift' of component 'shift_register' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/buffer_module.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'buffer_module' (5#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/buffer_module.vhd:23]
+INFO: [Synth 8-3491] module 'filter_selector' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/filter_selector.vhd:14' bound to instance 'unit_3' of component 'filter_selector' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/system_conv.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'filter_selector' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/filter_selector.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'filter_selector' (6#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/filter_selector.vhd:21]
+INFO: [Synth 8-3491] module 'convolutionModule' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/convolutionModule.vhd:14' bound to instance 'unit_4' of component 'convolutionModule' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/system_conv.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'convolutionModule' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/convolutionModule.vhd:29]
+INFO: [Synth 8-3491] module 'sel_counter' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/sel_counter.vhd:14' bound to instance 'unit' of component 'sel_counter' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/convolutionModule.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'sel_counter' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/sel_counter.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'sel_counter' (7#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/sel_counter.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'convolutionModule' (8#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/convolutionModule.vhd:29]
+INFO: [Synth 8-3491] module 'enable_write' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/enable_write.vhd:14' bound to instance 'unit_5' of component 'enable_write' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/system_conv.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'enable_write' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/enable_write.vhd:23]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/counter.vhd:13' bound to instance 'unit' of component 'counter' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/enable_write.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/counter.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'counter' (9#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/counter.vhd:19]
+INFO: [Synth 8-3491] module 'counter_write' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/counter_write.vhd:13' bound to instance 'unit_2' of component 'counter_write' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/enable_write.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'counter_write' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/counter_write.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'counter_write' (10#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/counter_write.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'enable_write' (11#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/enable_write.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'system_conv' (12#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/system_conv.vhd:31]
+INFO: [Synth 8-3491] module 'controleur_vga' declared at 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/controleur_vga.vhd:7' bound to instance 'controleur_vga_inst' of component 'controleur_vga' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/top.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'controleur_vga' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/controleur_vga.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'controleur_vga' (13#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/controleur_vga.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (14#1) [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/top.vhd:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1032.301 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1032.301 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1032.301 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.520 . Memory (MB): peak = 1032.301 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_div_inst'
+Finished Parsing XDC File [c:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_div_inst'
+Parsing XDC File [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/Cora-Z7-10-Master.xdc]
+Finished Parsing XDC File [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/Cora-Z7-10-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/Cora-Z7-10-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1064.547 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.360 . Memory (MB): peak = 1064.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1064.547 ; gain = 32.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1064.547 ; gain = 32.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_i. (constraint file  c:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_i. (constraint file  c:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_div_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1064.547 ; gain = 32.246
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 's_data_red_reg' [C:/Users/ingenieur_elec_fpga/Desktop/projet_4/top.vhd:110]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 1064.547 ; gain = 32.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 3     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	             2557 Bit    Registers := 16    
+	               32 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 24    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP unit_5/plusOp, operation Mode is: (C:0x2)+A*B.
+DSP Report: operator unit_5/plusOp is absorbed into DSP unit_5/plusOp.
+DSP Report: operator unit_5/tmp is absorbed into DSP unit_5/plusOp.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:20 ; elapsed = 00:07:50 . Memory (MB): peak = 1064.547 ; gain = 32.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|enable_write | (C:0x2)+A*B | 13     | 13     | 2      | -      | 26     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:34 ; elapsed = 00:08:05 . Memory (MB): peak = 1064.547 ; gain = 32.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:07:42 ; elapsed = 00:08:14 . Memory (MB): peak = 1064.547 ; gain = 32.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:07:44 ; elapsed = 00:08:16 . Memory (MB): peak = 1089.047 ; gain = 56.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:07:49 ; elapsed = 00:08:21 . Memory (MB): peak = 1089.047 ; gain = 56.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:49 ; elapsed = 00:08:21 . Memory (MB): peak = 1089.047 ; gain = 56.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:49 ; elapsed = 00:08:21 . Memory (MB): peak = 1089.047 ; gain = 56.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:49 ; elapsed = 00:08:21 . Memory (MB): peak = 1089.047 ; gain = 56.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:49 ; elapsed = 00:08:21 . Memory (MB): peak = 1089.047 ; gain = 56.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:49 ; elapsed = 00:08:21 . Memory (MB): peak = 1089.047 ; gain = 56.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | system_conv_inst/unit_2/first_buffer/r_reg_7_reg[2044]  | 513    | 1     | YES          | NO                 | YES               | 0      | 16      | 
+|top         | system_conv_inst/unit_2/first_buffer/r_reg_5_reg[2044]  | 513    | 1     | YES          | NO                 | YES               | 0      | 16      | 
+|top         | system_conv_inst/unit_2/second_buffer/r_reg_7_reg[2044] | 513    | 1     | YES          | NO                 | YES               | 0      | 16      | 
+|top         | system_conv_inst/unit_2/second_buffer/r_reg_5_reg[2044] | 513    | 1     | YES          | NO                 | YES               | 0      | 16      | 
+|top         | system_conv_inst/unit_2/first_buffer/r_reg_7_reg[1984]  | 61     | 1     | YES          | NO                 | YES               | 0      | 2       | 
+|top         | system_conv_inst/unit_2/first_buffer/r_reg_7_reg[1920]  | 64     | 7     | YES          | NO                 | YES               | 0      | 14      | 
+|top         | system_conv_inst/unit_2/first_buffer/r_reg_5_reg[1984]  | 61     | 1     | YES          | NO                 | YES               | 0      | 2       | 
+|top         | system_conv_inst/unit_2/first_buffer/r_reg_5_reg[1920]  | 64     | 7     | YES          | NO                 | YES               | 0      | 14      | 
+|top         | system_conv_inst/unit_2/second_buffer/r_reg_7_reg[1984] | 61     | 1     | YES          | NO                 | YES               | 0      | 2       | 
+|top         | system_conv_inst/unit_2/second_buffer/r_reg_7_reg[1920] | 64     | 7     | YES          | NO                 | YES               | 0      | 14      | 
+|top         | system_conv_inst/unit_2/second_buffer/r_reg_5_reg[1984] | 61     | 1     | YES          | NO                 | YES               | 0      | 2       | 
+|top         | system_conv_inst/unit_2/second_buffer/r_reg_5_reg[1920] | 64     | 7     | YES          | NO                 | YES               | 0      | 14      | 
+|top         | system_conv_inst/unit_2/first_buffer/r_reg_7_reg_c_510  | 512    | 1     | YES          | NO                 | YES               | 0      | 16      | 
++------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |BUFG    |     1|
+|3     |CARRY4  |   102|
+|4     |DSP48E1 |     1|
+|5     |LUT1    |    53|
+|6     |LUT2    |   354|
+|7     |LUT3    |    49|
+|8     |LUT4    |    13|
+|9     |LUT5    |    22|
+|10    |LUT6    |    60|
+|11    |MUXF7   |     4|
+|12    |SRLC32E |   142|
+|13    |FDCE    |   645|
+|14    |FDRE    |    89|
+|15    |FDSE    |     4|
+|16    |LDP     |     1|
+|17    |IBUF    |     1|
+|18    |OBUF    |    14|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:49 ; elapsed = 00:08:21 . Memory (MB): peak = 1089.047 ; gain = 56.746
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:07:32 ; elapsed = 00:08:10 . Memory (MB): peak = 1089.047 ; gain = 24.500
+Synthesis Optimization Complete : Time (s): cpu = 00:07:50 ; elapsed = 00:08:22 . Memory (MB): peak = 1089.047 ; gain = 56.746
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1097.859 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 108 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1097.859 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDP => LDPE (inverted pins: G): 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:07:57 ; elapsed = 00:08:38 . Memory (MB): peak = 1097.859 ; gain = 65.559
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/project_1.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 29 16:57:55 2023...

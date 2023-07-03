@@ -1,0 +1,38 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/fpga/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e316016b35bd429cb9275e7e5d953028 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=36.5,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture behavioral of entity xil_defaultlib.generateur_pattern [generateur_pattern_default]
+Compiling architecture arch_shift_register of entity xil_defaultlib.shift_register [shift_register_default]
+Compiling architecture arch_shift_register of entity xil_defaultlib.pixel_buffer [pixel_buffer_default]
+Compiling architecture arch_buffer_module of entity xil_defaultlib.buffer_module [buffer_module_default]
+Compiling architecture arch_filter_sel of entity xil_defaultlib.filter_selector [filter_selector_default]
+Compiling architecture arch_counter of entity xil_defaultlib.sel_counter [sel_counter_default]
+Compiling architecture arch_conv_module of entity xil_defaultlib.convolutionModule [convolutionmodule_default]
+Compiling architecture arch_counter_enable of entity xil_defaultlib.counter [counter_default]
+Compiling architecture arch_counter_write of entity xil_defaultlib.counter_write [counter_write_default]
+Compiling architecture arch_enable_write of entity xil_defaultlib.enable_write [enable_write_default]
+Compiling architecture arch_system_conv of entity xil_defaultlib.system_conv [system_conv_default]
+Compiling architecture behavioral of entity xil_defaultlib.controleur_vga [controleur_vga_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Built simulation snapshot tb_behav

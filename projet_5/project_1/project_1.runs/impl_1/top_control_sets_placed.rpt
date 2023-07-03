@@ -1,0 +1,92 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Jun 29 16:58:57 2023
+| Host         : DESKTOP-C4LOLEP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z010
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    14 |
+|    Minimum number of control sets                        |    14 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    61 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    14 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     5 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              31 |           19 |
+| No           | No                    | Yes                    |             587 |          136 |
+| No           | Yes                   | No                     |              27 |            9 |
+| Yes          | No                    | No                     |              12 |            2 |
+| Yes          | No                    | Yes                    |              50 |           14 |
+| Yes          | Yes                   | No                     |              24 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+----------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|             Clock Signal             |                 Enable Signal                |               Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------------+----------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|  system_conv_inst/unit_5/unit/enable |                                              |                                              |                1 |              1 |         1.00 |
+| ~generateur_pattern_inst/data_red[0] |                                              | generateur_pattern_inst/data_red[0]          |                1 |              1 |         1.00 |
+|  clk_div_inst/inst/clk_out1          |                                              | controleur_vga_inst/h_sync_reg0              |                1 |              1 |         1.00 |
+|  clk_div_inst/inst/clk_out1          |                                              | controleur_vga_inst/v_sync_reg0              |                1 |              1 |         1.00 |
+|  data_ready_BUFG                     | s_enable                                     |                                              |                2 |             12 |         6.00 |
+|  clk_div_inst/inst/clk_out1          |                                              | generateur_pattern_inst/eqOp1_in             |                3 |             12 |         4.00 |
+|  clk_div_inst/inst/clk_out1          |                                              | controleur_vga_inst/h_cntr_reg[0]_i_1__0_n_0 |                3 |             12 |         4.00 |
+|  clk_div_inst/inst/clk_out1          | generateur_pattern_inst/eqOp1_in             | generateur_pattern_inst/v_cntr_reg0          |                3 |             12 |         4.00 |
+|  clk_div_inst/inst/clk_out1          | controleur_vga_inst/eqOp2_in                 | controleur_vga_inst/v_cntr_reg0              |                3 |             12 |         4.00 |
+|  clk_div_inst/inst/clk_out1          | system_conv_inst/unit_4/unit/E[0]            | reset_i_IBUF                                 |                6 |             18 |         3.00 |
+|  data_ready_BUFG                     |                                              | reset_i_IBUF                                 |                7 |             32 |         4.57 |
+|  data_ready_BUFG                     | system_conv_inst/unit_5/unit/r_reg_reg[31]_0 | reset_i_IBUF                                 |                8 |             32 |         4.00 |
+|  clk_div_inst/inst/clk_out1          |                                              |                                              |               34 |            156 |         4.59 |
+|  clk_div_inst/inst/clk_out1          |                                              | reset_i_IBUF                                 |              129 |            555 |         4.30 |
++--------------------------------------+----------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+
+

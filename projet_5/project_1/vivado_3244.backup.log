@@ -1,0 +1,197 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 29 09:27:44 2023
+# Process ID: 3244
+# Current directory: D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11112 D:\AJC projets\VGA phase2\Image_Conv_VHDL_280623v5_filtrage unite\project_1\project_1.xpr
+# Log file: D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/vivado.log
+# Journal file: D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 1123.121 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/buffer_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'buffer_module'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/controleur_vga.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controleur_vga'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/convolutionModule.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'convolutionModule'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/counter_write.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_write'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/enable_write.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'enable_write'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/filter_selector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'filter_selector'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/generateur_pattern.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'generateur_pattern'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/pixel_buffer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pixel_buffer'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/sel_counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sel_counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/shift_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'shift_register'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/system_conv.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_conv'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto e316016b35bd429cb9275e7e5d953028 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e316016b35bd429cb9275e7e5d953028 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=36.5,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture behavioral of entity xil_defaultlib.generateur_pattern [generateur_pattern_default]
+Compiling architecture arch_shift_register of entity xil_defaultlib.shift_register [shift_register_default]
+Compiling architecture arch_shift_register of entity xil_defaultlib.pixel_buffer [pixel_buffer_default]
+Compiling architecture arch_buffer_module of entity xil_defaultlib.buffer_module [buffer_module_default]
+Compiling architecture arch_filter_sel of entity xil_defaultlib.filter_selector [filter_selector_default]
+Compiling architecture arch_counter of entity xil_defaultlib.sel_counter [sel_counter_default]
+Compiling architecture arch_conv_module of entity xil_defaultlib.convolutionModule [convolutionmodule_default]
+Compiling architecture arch_counter_enable of entity xil_defaultlib.counter [counter_default]
+Compiling architecture arch_counter_write of entity xil_defaultlib.counter_write [counter_write_default]
+Compiling architecture arch_enable_write of entity xil_defaultlib.enable_write [enable_write_default]
+Compiling architecture arch_system_conv of entity xil_defaultlib.system_conv [system_conv_default]
+Compiling architecture behavioral of entity xil_defaultlib.controleur_vga [controleur_vga_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Built simulation snapshot tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1123.121 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {{D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1123.121 ; gain = 0.000
+run 1 ms
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1123.121 ; gain = 0.000
+save_wave_config {D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto e316016b35bd429cb9275e7e5d953028 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e316016b35bd429cb9275e7e5d953028 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {{D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1123.121 ; gain = 0.000
+run 1 ms
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1123.121 ; gain = 0.000
+save_wave_config {D:/AJC projets/VGA phase2/Image_Conv_VHDL_280623v5_filtrage unite/project_1/tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 29 10:04:39 2023...

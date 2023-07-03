@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun 30 09:29:59 2023
+# Process ID: 20296
+# Current directory: C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5616 C:\Users\ingenieur_elec_fpga\Desktop\projet_4\project_1\project_1.xpr
+# Log file: C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/vivado.log
+# Journal file: C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg
+source tb.tcl
+run 1ms
+save_wave_config {C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg}
+save_wave_config {C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg
+source tb.tcl
+run 300us
+close_sim
+launch_simulation
+open_wave_config C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg
+source tb.tcl
+run 300us
+close_sim
+launch_simulation
+open_wave_config C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg
+source tb.tcl
+run 300us
+close_sim
+launch_simulation
+open_wave_config C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg
+source tb.tcl
+run 300us
+close_sim
+launch_simulation
+open_wave_config C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg
+source tb.tcl
+run 200us
+close_sim
+launch_simulation
+open_wave_config C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg
+source tb.tcl
+run 200us
+close_sim
+launch_simulation
+open_wave_config C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg
+source tb.tcl
+run 300us
+restart
+run 300us
+save_wave_config {C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg
+source tb.tcl
+run 300us
+close_sim
+launch_simulation
+open_wave_config C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg
+source tb.tcl
+run 300us
+close_sim
+launch_simulation
+open_wave_config C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg
+source tb.tcl
+run 300us
+restart;run 300us
+run 1 ms
+save_wave_config {C:/Users/ingenieur_elec_fpga/Desktop/projet_4/project_1/tb_behav.wcfg}
+close_sim
