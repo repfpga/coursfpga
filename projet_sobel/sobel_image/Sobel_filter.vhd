@@ -62,7 +62,7 @@ architecture Sobel of Sobel_filter is
 	component Sobel_hs is
 	generic (
 				constant data_width : integer := 8;
-				constant addr_cnt	:integer := 22
+				constant addr_cnt	:integer := 24
 	);
 	port (
 			clk : in std_logic;
@@ -78,7 +78,7 @@ architecture Sobel of Sobel_filter is
 	component Sobel_vs is
 	generic (
 				constant data_width : integer := 8;
-				constant addr_cnt	:integer := 22
+				constant addr_cnt	:integer := 24
 	);
 	port (
 			clk : in std_logic;
@@ -184,8 +184,8 @@ begin
 			dout => s_dout_vs
 		
 		);
-	----- detection le contour d'image---------
-	-------------------------------------------	
+		----- process pour detecter le contour d'image --------
+	----------------------------------------------	
 		 process(clk, resetn)
 	begin
 		if resetn = '1' then
@@ -198,5 +198,21 @@ begin
 			end if;
 		end if;
 	end process;
-		
+	----------------------------------------------------------	
+	-------------- Process pour detecter des point d'intérets-------
+	-----------------------------------------------------------------	
+--		 process(clk, resetn)
+--	begin
+--		if resetn = '1' then
+--			dout <= (others =>'0');	
+--		elsif rising_edge(clk) then			
+--			if unsigned(s_dout) > 65 then
+--				dout <= "11111111";
+--			else
+--				dout <= "00000000";
+--			end if;
+--		end if;
+--	end process;
+	-----------------------------------------------------------------
+	------------------------------------------------------------------	
 end Sobel;

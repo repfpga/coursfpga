@@ -31,8 +31,8 @@ module tb_read_write_image(   );
   
   
   //dimensions de l'image
-  parameter IMAGE_WIDTH = 'd640;   
-  parameter IMAGE_HEIGHT = 'd480;
+  parameter IMAGE_WIDTH = 'd1531;   
+  parameter IMAGE_HEIGHT = 'd1080;
 
   parameter hp = 5;           //demi periode de l'horloge
   parameter period = 2*hp;    //periode de l'horloge

@@ -59,10 +59,7 @@ begin
 	--internal module signal
 	s_dout <= conv_std_logic_vector(s_step4_out_1, data_width );
 		
-	--dege detector
-	--	|1 0 -1|
-	--	|1 0 -1|	
-	--	|1 0 -1|
+
 	
 	--	|1 0 -1|
 	--	|2 0 -2|	

@@ -5,11 +5,11 @@ use ieee.numeric_std.all;
 entity top is
 	generic(
 		constant PX_SIZE : integer := 8 ;       -- taille d'un pixel
-		constant addr_cnt	: integer := 22	;
-		constant img_width	: integer := 640;
-		constant img_height	: integer := 480;
-		constant rom_depth	: integer := 640*480;
-		constant alt_tap_3_3	: integer := 640-2;  
+		constant addr_cnt	: integer := 24	;     --- log2(8*1531*1080)=23.6
+		constant img_width	: integer := 1531;
+		constant img_height	: integer := 1080;
+		constant rom_depth	: integer := 1531*1080;    
+		constant alt_tap_3_3	: integer := 1531-2;  
 		constant window_size_3_3 : integer := 3
 	);
 	port(
@@ -102,7 +102,6 @@ generic map(
 	port map(
 		clk => clk,
 		resetn => resetn,
-	--	en 	=> s_ctl_en,
 	    en => input_data_valid ,
 		stream_on => s_stream_on,
 		addr => s_rom_addr
